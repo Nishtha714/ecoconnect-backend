@@ -1,0 +1,197 @@
+[
+  {
+    "name": "HARISH KUMAR PAL",
+    "skills": [
+      "Electrical maintenance",
+      "Field troubleshooting",
+      "Equipment servicing",
+      "Safety handling",
+      "Practical technical work"
+    ]
+  },
+  {
+    "name": "JITENDRA",
+    "skills": [
+      "Process understanding",
+      "SOP-based working",
+      "Production system knowledge",
+      "Reporting & tracking",
+      "Structured work style"
+    ]
+  },
+  {
+    "name": "Rahul Kumar",
+    "skills": [
+      "Hardware testing",
+      "Electrical troubleshooting",
+      "Quality checks",
+      "Manufacturing process knowledge",
+      "Technical field readiness"
+    ]
+  },
+  {
+    "name": "Jyoti Sangam",
+    "skills": [
+      "IoT systems understanding",
+      "AI/Data logic",
+      "Analytical mindset",
+      "Tech learning ability"
+    ]
+  },
+  {
+    "name": "Ankit Kumar",
+    "skills": [
+      "Machine handling",
+      "Equipment operations",
+      "Basic technical troubleshooting",
+      "Battery system exposure",
+      "Field readiness"
+    ]
+  },
+  {
+    "name": "Vipul Kumar Singh",
+    "skills": [
+      "Electrical system understanding",
+      "MATLAB",
+      "Power distribution basics",
+      "Hardware knowledge",
+      "Technical problem-solving"
+    ]
+  },
+  {
+    "name": "Krishika Nim",
+    "skills": [
+      "Data analysis",
+      "SQL",
+      "Python",
+      "Product thinking",
+      "Business understanding"
+    ]
+  },
+  {
+    "name": "Jiya Kumari",
+    "skills": [
+      "Data analytics",
+      "ML/DL knowledge",
+      "Programming",
+      "System understanding",
+      "Technical problem-solving"
+    ]
+  },
+  {
+    "name": "Nishtha Dhariwal",
+    "skills": [
+      "System operations",
+      "Authentication & security basics",
+      "AI understanding",
+      "Deployment support",
+      "Troubleshooting"
+    ]
+  },
+  {
+    "name": "Harvansh Singh Pal",
+    "skills": [
+      "EV charger installation",
+      "Network engineering",
+      "Electrical maintenance",
+      "Wiring",
+      "Team leadership"
+    ]
+  },
+  {
+    "name": "Divya Verma",
+    "skills": [
+      "Backend & frontend coding",
+      "SQL & database handling",
+      "AI/DL/CV knowledge",
+      "Application troubleshooting",
+      "Deployment experience"
+    ]
+  },
+  {
+    "name": "Hasmita Gahlot",
+    "skills": [
+      "AI/ML",
+      "Python & C++",
+      "SQL",
+      "Web development basics",
+      "Problem-solving"
+    ]
+  },
+  {
+    "name": "Simran Singh",
+    "skills": [
+      "Data science",
+      "Machine learning",
+      "Python",
+      "Frontend development",
+      "Dashboard analytics"
+    ]
+  },
+  {
+    "name": "Sneha Sah",
+    "skills": [
+      "AI & ML",
+      "LLM exposure",
+      "Data visualization",
+      "Dashboard development",
+      "ML pipelines"
+    ]
+  },
+  {
+    "name": "Kusum Kumari",
+    "skills": [
+      "Full stack development",
+      "AI/ML projects",
+      "API knowledge",
+      "Telecom systems",
+      "Basic hardware"
+    ]
+  },
+  {
+    "name": "Himanshi Verma",
+    "skills": [
+      "Frontend (React)",
+      "API integration",
+      "UI/UX design",
+      "ML awareness",
+      "System understanding"
+    ]
+  },
+  {
+    "name": "Shivam",
+    "skills": [
+      "Transformers & electrical systems",
+      "Maintenance & checking",
+      "Field exposure"
+    ]
+  },
+  {
+    "name": "Dhruv Solanki",
+    "skills": [
+      "Electrical & control systems",
+      "SQL & Python",
+      "MATLAB",
+      "Analytical mindset"
+    ]
+  },
+  {
+    "name": "Abhishek",
+    "skills": [
+      "Web development",
+      "Backend coding",
+      "Data analytics",
+      "Electrical product understanding",
+      "Software support"
+    ]
+  },
+  {
+    "name": "Vanshika Sharma",
+    "skills": [
+      "AI/ML",
+      "MATLAB",
+      "Analytics",
+      "Industry tech knowledge"
+    ]
+  }
+]
