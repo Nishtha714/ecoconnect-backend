@@ -61,10 +61,7 @@ def require_admin(credentials: HTTPAuthorizationCredentials = Depends(security))
 # ================================================================
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "https://ecoconnectservices.org",
-        "https://www.ecoconnectservices.org",
-    ],
+    allow_origins=["*"],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
