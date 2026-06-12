@@ -66,6 +66,8 @@ app.add_middleware(
     "https://ecoconnect-app-git-main-nishtha-s-projects1.vercel.app",
     "http://localhost:8081",  # Local Expo development
     "http://localhost:19006", # Local Expo web
+    "https://ecoconnect-backend-7qov.onrender.com",
+
 ],
     allow_credentials=False,
     allow_methods=["*"],
