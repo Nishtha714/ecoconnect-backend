@@ -309,6 +309,16 @@ def send_user_otp(data: User):
     send_otp_email(data.email, data.name, otp)
     return {"message": "OTP sent to your email"}
 
+
+@app.get("/test-network")
+async def test_network():
+    import httpx
+    try:
+        r = httpx.get("https://api.resend.com", timeout=5)
+        return {"status": "reachable", "code": r.status_code}
+    except Exception as e:
+        return {"status": "blocked", "error": str(e)}
+
 @app.post("/add-user/verify-otp")
 def verify_user_otp(email: str, otp: str):
     record = otp_store.get(email)
