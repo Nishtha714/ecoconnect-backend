@@ -61,7 +61,12 @@ def require_admin(credentials: HTTPAuthorizationCredentials = Depends(security))
 # ================================================================
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://ecoconnectservices.org",
+    "https://www.ecoconnectservices.org",
+    "https://ecoconnect-app-git-main-nishtha-s-projects1.vercel.app",
+    "http://localhost:8081",  # Local Expo development
+    "http://localhost:19006", # Local Expo web
+],
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
