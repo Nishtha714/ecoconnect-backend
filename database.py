@@ -1,6 +1,8 @@
+import os
 from pymongo import MongoClient, DESCENDING
 
-client = MongoClient("mongodb://localhost:27017")
+MONGO_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
+client = MongoClient(MONGO_URI)
 db = client["ecoconnect"]
 
 users_collection       = db["users"]
