@@ -3,7 +3,7 @@ import random
 import os
 
 RESEND_API_KEY = os.getenv("RESEND_API_KEY")
-FROM_EMAIL = "onboarding@resend.dev"
+FROM_EMAIL = "info@ecoconnectservices.org"
 ADMIN_EMAIL = "aryan@ecoconnectservices.com"
 
 def _send(payload):
