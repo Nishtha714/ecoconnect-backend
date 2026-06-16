@@ -1,9 +1,9 @@
 import os
 from pymongo import MongoClient, DESCENDING
 
-MONGO_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
+MONGO_URI = os.getenv("MONGODB_URI", "mongodb+srv://nishthadhariwal2005_db_user:Ecoconnect123@cluster0.nftafjf.mongodb.net/")
 client = MongoClient(MONGO_URI)
-db = client["ecoconnect"]
+db = client["ecoconnect_db"]
 
 users_collection       = db["users"]
 projects_collection    = db["projects"]

@@ -12,6 +12,8 @@ import uuid
 from email_utils import send_admin_notification
 from email_utils import send_admin_notification, generate_otp, send_otp_email, send_welcome_email
 import time
+from fastapi.responses import FileResponse
+
 
 from database import (
     db, users_collection, projects_collection,
@@ -373,6 +375,18 @@ def get_user(user_id: str, _: dict = Depends(get_current_user)):
     if not user:
         raise HTTPException(status_code=404, detail="User not found")
     return user
+
+@app.get("/download-resume/{user_id}")
+def download_resume(user_id: str, current: dict = Depends(get_current_user)):
+    if current.get("role") != "admin" and current.get("sub") != user_id:
+        raise HTTPException(status_code=403, detail="Not authorised")
+    user = users_collection.find_one({"user_id": user_id})
+    if not user or not user.get("resume"):
+        raise HTTPException(status_code=404, detail="Resume not found")
+    file_path = user["resume"]
+    if not os.path.exists(file_path):
+        raise HTTPException(status_code=404, detail="Resume file missing on server")
+    return FileResponse(file_path, filename=os.path.basename(file_path))
 
 
 @app.patch("/update-user/{user_id}")
