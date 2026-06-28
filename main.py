@@ -376,6 +376,14 @@ def add_client(data: ClientUser):
     send_admin_notification(data.name, data.email, "client")
     return {"message": "Client registered successfully", "user_id": doc["user_id"]}
 
+@app.get("/download-resume/{user_id}")
+def download_resume(user_id: str, _: dict = Depends(get_current_user)):
+    user = users_collection.find_one({"user_id": user_id}, {"_id": 0})
+    if not user or not user.get("resume"):
+        raise HTTPException(status_code=404, detail="Resume not found")
+    return {"url": user["resume"]}
+
+
 
 @app.get("/get-users")
 def get_users(_: dict = Depends(get_current_user)):
