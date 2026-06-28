@@ -481,7 +481,7 @@ def upload_resume(
     result = cloudinary.uploader.upload(
         file.file,
         folder=f"ecoconnect/resumes/{user_id}",
-        resource_type="raw",
+        resource_type="auto",
         public_id=file.filename,
         overwrite=True,
         access_control=[{"access_type": "anonymous"}],
