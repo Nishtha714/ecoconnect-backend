@@ -484,6 +484,8 @@ def upload_resume(
         resource_type="raw",
         public_id=file.filename,
         overwrite=True,
+        access_control=[{"access_type": "anonymous"}],
+
     )
     resume_url = result["secure_url"]
     users_collection.update_one(
