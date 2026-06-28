@@ -15,6 +15,9 @@ import time
 from fastapi.responses import FileResponse
 import cloudinary
 import cloudinary.uploader
+from fastapi import Request
+from fastapi.responses import JSONResponse
+
 
 from database import (
     db, users_collection, projects_collection,
@@ -75,7 +78,20 @@ app.add_middleware(
     allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["*"],
+    max_age=3600,
 )
+
+@app.options("/upload-resume/{user_id}")
+async def upload_resume_options(user_id: str, request: Request):
+    return JSONResponse(
+        content={},
+        headers={
+            "Access-Control-Allow-Origin": request.headers.get("origin", "*"),
+            "Access-Control-Allow-Methods": "POST, OPTIONS",
+            "Access-Control-Allow-Headers": "Authorization, Content-Type",
+        }
+    )
 
 cloudinary.config(
     cloud_name = os.getenv("CLOUDINARY_CLOUD_NAME"),
